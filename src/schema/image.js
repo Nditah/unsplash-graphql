@@ -3,6 +3,12 @@ const {gql} = require('apollo-server');
 
 const Image = gql`
 
+    # type Link {
+    #     self:String!
+    #     html:String
+    #     download:String
+    # }
+
     type Image {
         id:ID!
         created_at:String!
